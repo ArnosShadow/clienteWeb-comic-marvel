@@ -1,0 +1,57 @@
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border-bottom: 1px solid #ddd;
+  z-index: 10; 
+  position: relative; 
+}
+.formulario-buscador{
+  background-color: transparent;
+  border: none;
+}
+.buscador {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  fill: #aaa;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+  padding: 5px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Botón */
+button {
+  background-color: #fe4b4b;
+  color: white;
+  border-radius: 50px;
+  margin:2%;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+  

@@ -1,0 +1,236 @@
+/*FEED FAVORITO*/
+.comics-favoritos-contenedor {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: solid #333;
+}
+
+.titulo-comic-favoritos {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.comics-favoritos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.comic-favorito {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.comic-favorito:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comic-favorito img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.comic-favorito p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.boton-comic-favorito {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* Icono de favorito */
+.icono-lleno{
+  width: 3em;
+  height: 3em;
+  fill: #f52121;
+  transition: opacity 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+.icono-vacio {
+  width: 3em;
+  height: 3em;
+  fill: #ffffff;
+  transition: fill 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+}
+.boton-comic-favorito:active .icono-lleno {
+  opacity: 1;
+}
+.boton-comic-favorito:active .icono-vacio {
+  opacity: 0;
+}
+.boton-comic-favorito {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+/*FEED reciente*/
+.titulo-comic-reciente{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.comics-recientes-contenedor{
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-left: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carrusel-comics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+/*FEED total*/
+.contenedor-comic-total {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.titulo-comic-total {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.comics-totales {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+/*FEED COMIC*/
+.comic {
+  /*Centramos la imagen y hacemos que lo cubra todo*/
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.comic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comic p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.comic .boton-abrir-comics {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comic .boton-abrir-comics:hover {
+  background-color: #0056b3;
+}
+
+/*FEED DESCRIPCION*/
+/*Dialog*/
+
+dialog {
+  max-width: 72rem;
+  padding: 2rem;
+  background-color: #fff; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  border: none;
+  margin: auto;
+}
+
+/*Contenido de dentro del dialog*/
+.contenedor-descripcion {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imagen-descripcion {
+  width: 300px;
+}
+
+.imagen-descripcion img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.informacion-descripcion h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.informacion-descripcion h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+.informacion-descripcion p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.personajes-descripcion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.personajes-descripcion img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
